@@ -1,0 +1,26 @@
+
+html {
+    background-color: rgba(185, 127, 185, 0.3); font-size: 18px; line-height: 3ch;
+}
+h1 {
+    font-size: 1.2rem; text-decoration: underline; text-transform: uppercase;
+}
+html {
+    font-family: cursive; color: rgb(48, 18, 75);
+}
+html {
+    text-align: center;
+}
+
+.right {text-align: right;}
+.left {text-align: left}
+
+p {
+    font-style: italic;
+}
+
+.border {
+    border: 3px solid rgb(63, 7, 65);
+    border-radius: 50%;
+}
+
