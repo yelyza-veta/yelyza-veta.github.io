@@ -1,1 +1,0 @@
-# yelyza-veta.github.io
