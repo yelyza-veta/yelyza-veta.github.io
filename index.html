@@ -4,7 +4,7 @@
 
         <meta charset="UTF-8">
         <title>Park Hotel</title>
-        <link rel="stylesheet" href="./styles/style.css">
+        <link rel="stylesheet" href="styles/style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
@@ -25,13 +25,13 @@
     <h1>Парк-отель</h1>
     <p>Место где вы можете забыть о городе <br/>
     и воссоединиться с природой</p>
-    <button class="b1">Забронировать</button>
+    <input class="book-appart" type="button" id="book" value="Забронировать"/>
 </section>
 
 <section>
 
     <article class="about-us"> 
-        <img src="../Park Hotel/img/riv.png" alt="река"/>
+        <img src="Park Hotel/img/riv.png" alt="река"/>
         <h3>О нас</h3>
         <p>Наш отель расположен на Онежском озере 
         </br>и окружен сосновым лесом.
@@ -48,7 +48,7 @@
      <div class="container">
 
     <div>
-        <img src="../Park Hotel/img/Vector.png" alt="bath" width="25%"/>
+        <img src="Park Hotel/img/Vector.png" alt="bath" width="25%"/>
         <h5>Баня</h5> 
         <p>В нашем Парк-отеле вы сможете <br/> 
             посетить настоящую Русскую баню,<br/> 
@@ -58,7 +58,7 @@
     </div>
 
     <div> 
-        <img src="./img/Vector2.png" alt="fish" width="40%"/>
+        <img src="img/Vector2.png" alt="fish" width="40%"/>
         <h5>Рыбалка</h5>
         <p>На Онежском озере вы сможете<br/> 
             насладиться рыбалкой в окружении<br/> 
@@ -67,7 +67,7 @@
     </div>
 
     <div> 
-        <img src="../Park Hotel/img/Vector3.png" alt="sport" width="30%"/>
+        <img src="Park Hotel/img/Vector3.png" alt="sport" width="30%"/>
         <h5>Спорт</h5> 
         <p>В парке есть несколько спортивных<br/> 
             площадок для детей и взрослых.<br/> 
@@ -87,7 +87,7 @@
         <p>Для создания интерьера мы используем только экологичные материалы</p>
         <div class="container">
     <div>
-        <img src="./img/hotel.png" alt="Отель" width="100%"/>
+        <img src="img/hotel.png" alt="Отель" width="100%"/>
     <h5>Отель</h5>
     <p>10 двойных номеров и 5 номеров на троих<br/>  
         с видом на озеро и лес. Завтрак, обед и<br/>  
@@ -97,7 +97,7 @@
 
 <div>
     <div> VIP </div>
-    <img src="./img/cott.png" alt="Котедж" width="90%"/>
+    <img src="img/cott.png" alt="Котедж" width="90%"/>
         <h5>Котедж</h5>
         <p>5 шестиместных коттеджей с террасой,<br/>  
             сауной, местом для мангала и видом на<br/>  
@@ -108,7 +108,7 @@
 </div>
 
 <div>
-    <img src="./img/toun.png" alt="Таунхаус" width="100%"/>  
+    <img src="img/toun.png" alt="Таунхаус" width="100%"/>  
         <h5>Таунхаус</h5>
         <p>5 четырехместных аппартаментов с<br/>  
             индивидуальной террасой и видом на<br/>  
@@ -127,25 +127,30 @@
          и забронируйте отдых в Парк-отеле.</p>
 
 <form>
-    <label>Email</label>
-    <input type="email"/>
-    <br/>
-    <label>Имя</label>
-    <input type="text"/>
-    <div>Выберите тип апартаментов</div>
-    <input type="radio" name="appartment" value="отель"/> <label>отель</label>
-    <br/>
-    <input type="radio" name="appartment" value="котедж"/> <label>котедж</label>
-    <br/>
-    <input type="radio" name="appartment" value="таунхаус"/> <label>таунхаус</label>
+    <label for="userEmail">E-mail</label>
+   <input type="text" name="email"  id="userEmail" placeholder="Ваш email"/>
 </br>
-    <button class="b2">Забронировать апартаменты</button>
+    <label for="userName">Имя</label>
+    <input type="text" name="name" id="useName" placeholder="Ваше полное имя"/>
+    <div>Выберите тип апартаментов</div>
+    <input type="radio" name="apartment" id="apartment1" value="отель"/>
+    <label for="apartment1">Отель</label>
+</br>
+    <input type="radio" name="apartment" id="apartment2" value="Котедж"/>
+    <label for="apartment2">Котедж</label>
+</br>
+    <input type="radio" name="apartment" id="apartment3" value="Таунхаус"/>
+    <label for="apartment3">Таунхаус</label>
+    
+</br>
+    
+    <input class="book-appart" type="button" id="book" value="Забронировать апартаменты">
 </form>
 </section> 
 </main>
 
 <footer>
-    <h5>Парк-отель</h5>
+    <h5>Парк - отель</h5>
 <nav class="end">
     <a>О нас</a>
     <br/>
